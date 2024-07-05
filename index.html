@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Senha</h2>
+        <div class="resultado-container">
+            <span id="resultado"></span>
+            <button class="bto" id="clipboard">
+                <i class="far fa-copy"></i>
+            </button>
+        </div>
+        <div class="configuracoes">
+            <div class="configuracao">
+                <label for="length">Comprimento da senha</label>
+                <input
+                type="number"
+                name="length" 
+                id="length"
+                min="4"
+                max="20"
+                value="20"
+                />
+              </div>
+            <div class="configuracao">
+                <label for="maiuscula">Incluir letras maiúscula?</label>
+                <input type="checkbox" name="maiuscula" id="maiuscula" checked/>
+              </div>
+            <div class="configuracao">
+                <label for="minuscula">Incluir letras minusculas?</label>
+                 <input type="checkbox" name="minuscula" id="minuscula" checked/>
+              </div>
+            <div class="configuracao">
+                <label for="numeros">Incluir numeros?</label>
+                <input type="checkbox" name="numeros" id="numeros" checked/>
+             </div>
+            <div class="configuracao">
+                <label for="symbols">Incluir simbolos?</label>
+                <input type="checkbox" name="symbols" id="symbols" checked/>
+            </div>
+           </div>
+           <button class="bto bto-grande" id="gerar">Gerar senha</button>
+            </div>
+            
+
+    <script src="script.js"></script>
+</body>
+</html>
